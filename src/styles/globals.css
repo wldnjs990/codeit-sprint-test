@@ -1,0 +1,4 @@
+@import "tailwindcss";
+/* layer로 테일윈드에서 내부적으로 스타일들을 레이어로 정렬해줘서 최적화를 해준다나 뭐라나... */
+@import "./theme.css" layer(theme);
+@import "./typography.css" layer(base);
