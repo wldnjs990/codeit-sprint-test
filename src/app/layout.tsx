@@ -24,9 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
+      <head>
+        <link
+          href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-slate-900`}
       >
         <Navigate />
         {children}

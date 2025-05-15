@@ -1,22 +1,22 @@
 /* 주로 단일요소에 바로 적용해서 사용하는 폰트 사이즈는 클래스로 만들어서 사용 */
 @layer base {
-  .text-xl-bold {
+  .xl-bold {
     font-size: 20px;
     font-weight: 700;
   }
-  .text-lg-bold {
+  .lg-bold {
     font-size: 18px;
     font-weight: 700;
   }
-  .text-md-bold {
+  .md-Extrabold {
     font-size: 16px;
     font-weight: 800;
   }
-  .text-md-ExtraBold {
+  .md-Bold {
     font-size: 16px;
     font-weight: 700;
   }
-  .text-md-regular {
+  .md-regular {
     font-size: 16px;
     font-weight: 400;
   }
