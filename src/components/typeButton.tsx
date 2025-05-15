@@ -1,7 +1,7 @@
 "use client";
-import { CancelIcon, CheckIcon, SmallPlusIcon } from "@/assets/icon";
+import { CancelIcon, CheckIcon, SmallPlusIcon } from "@/assets/icons";
 import { twMerge } from "tailwind-merge";
-import Shadow from "./shadow";
+import Shadow from "./Shadow";
 export default function TypeButton({
   Type,
   Size,

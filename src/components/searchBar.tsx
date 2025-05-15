@@ -1,5 +1,5 @@
 import React from "react";
-import Shadow from "./shadow";
+import Shadow from "./Shadow";
 
 export default function SearchBar() {
   return (
