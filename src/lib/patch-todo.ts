@@ -9,8 +9,9 @@ export const patchTodo = async (
 ): Promise<TodoData | null> => {
   // Object.fromEntries란? = [[key, value]]로 구성되어있는 배열 자료형을 객체 자료형으로 바꿔주는 메서드
   // Object.entries란? = 객체형식의 데이터를 [[key, value]]형태의 배열 자료형으로 바꿔주는 메서드
+  // filter 함수에서 첫 번째 인자를 쓰지 않으면 빈값으로 넣어두면 됨(_를 넣어서 의도를 표시하는 방법이 있긴 한데 린트가 뭐라함)
   const body = Object.fromEntries(
-    Object.entries(requestBody).filter(([_, v]) => v !== undefined)
+    Object.entries(requestBody).filter(([, v]) => v !== undefined)
   );
   try {
     const response = await fetch(

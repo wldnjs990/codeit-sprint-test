@@ -64,10 +64,12 @@ export default function DetailImageBox({ imageUrl, setTodo }: DetailImageBox) {
         {/* 이미지 유무에 따라 빈 화면, 이미지 화면 분기처리 */}
         {imageUrl ? (
           <>
-            <img
+            <Image
               src={imageUrl}
               alt="미리보기 이미지"
-              className="w-full h-full object-fill rounded-3xl"
+              fill
+              className="object-fill rounded-3xl"
+              sizes="(max-width: 744px) 100vw, 384px"
             />
             <ImageButton isUploaded={true} />
           </>
