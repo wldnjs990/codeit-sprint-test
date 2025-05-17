@@ -1,13 +1,30 @@
+/* Nanum 폰트 import */
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css");
 @import "tailwindcss";
 /* layer로 테일윈드에서 내부적으로 스타일들을 레이어로 정렬해줘서 최적화를 해준다나 뭐라나... */
 @import "./theme.css" layer(theme);
 @import "./typography.css";
 
+/* 메모쪽에 스크롤바가 색상이 있길래 적용해봤습니다. */
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* 스크롤바 손잡이 꾸미기 */
+::-webkit-scrollbar-thumb {
+  background: #fde68a;
+  border-radius: 5px;
+}
+
+/* 디자인 전체에 NanumSquare로 폰트 스타일이 고정되어있어 body에 전역으로 기본 폰트를 부여했습니다. */
 @layer base {
   body {
     font-family: "NanumSquare", sans-serif;
     line-height: 18px;
     font-weight: 400;
     font-style: normal;
+  }
+  /* 이미지 점선 테두리 만들기(만드는중, 이거 어떻게 만드나요..?) */
+  .dashed-line {
+    border: 2px solid #cbd5e1;
   }
 }

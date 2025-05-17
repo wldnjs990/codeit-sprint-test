@@ -25,15 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <link
-          href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-slate-900`}
       >
+        {/* 상단 네비게이션 */}
         <Navigate />
         {children}
       </body>
