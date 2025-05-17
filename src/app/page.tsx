@@ -1,8 +1,8 @@
 "use client";
 
-import PageLayout from "@/components/PageLayout";
-import SearchSection from "@/components/SearchSection";
-import TodoSection from "@/components/TodoSection";
+import PageLayout from "@/app/components/PageLayout";
+import SearchSection from "@/app/components/SearchSection";
+import TodoSection from "@/app/components/TodoSection";
 import { getTodo } from "@/lib/get-todo";
 import { useEffect, useState } from "react";
 

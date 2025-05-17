@@ -1,6 +1,6 @@
 "use client";
 
-import PageLayout from "@/components/PageLayout";
+import PageLayout from "@/app/components/PageLayout";
 import DetailTitle from "./components/DetailTitle";
 import DetailContent from "./components/DetailContent";
 import { useParams } from "next/navigation";

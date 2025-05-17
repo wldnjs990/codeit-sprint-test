@@ -1,4 +1,4 @@
-import TypeButton from "@/components/TypeButton";
+import TypeButton from "@/app/components/TypeButton";
 
 export default function DetailButtons({ id, name, memo, imageUrl }: TodoData) {
   const requestBody = {
