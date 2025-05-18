@@ -1,6 +1,5 @@
 "use client";
 
-import { CancelIcon, CheckIcon, SmallPlusIcon } from "@/assets/icons";
 import { twMerge } from "tailwind-merge";
 import Shadow from "./Shadow";
 import { postTodo } from "@/lib/post-todo";
