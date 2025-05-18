@@ -1,4 +1,4 @@
-## 코드잇 스프린트 과제 테스트
+# 코드잇 스프린트 과제 테스트
 
 사용한 기술스택 : <br/>
 Next.js, TypeScript, Tailwind(twMerge)
