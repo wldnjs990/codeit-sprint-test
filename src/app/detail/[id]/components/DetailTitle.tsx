@@ -6,7 +6,9 @@ import notCheckedImg from "@/assets/images/not-checked-img.png";
 import { twMerge } from "tailwind-merge";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
-interface DetailTitle extends TodoData {
+interface DetailTitle {
+  name: string;
+  isCompleted: boolean;
   setTodo: Dispatch<SetStateAction<TodoData>>;
 }
 export default function DetailTitle({
@@ -14,10 +16,6 @@ export default function DetailTitle({
   isCompleted,
   setTodo,
 }: DetailTitle) {
-  const titleStyle = twMerge(
-    "w-full py-4 mt-6 flex gap-4 items-center justify-center border-2 border-slate-900 rounded-3xl",
-    `${isCompleted ? "bg-violet-200" : "bg-white"}`
-  );
   // input 넓이 자동측정용 ref객체
   const spanRef = useRef<HTMLSpanElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -39,8 +37,14 @@ export default function DetailTitle({
   useEffect(() => {
     if (isEdit && inputRef.current) inputRef.current.focus();
   }, [isEdit]);
+
   return (
-    <div className={titleStyle}>
+    <div
+      className={twMerge(
+        "w-full py-4 mt-6 flex gap-4 items-center justify-center border-2 border-slate-900 rounded-3xl",
+        `${isCompleted ? "bg-violet-200" : "bg-white"}`
+      )}
+    >
       <Image
         src={isCompleted ? checkedImg : notCheckedImg}
         alt="체크됨 이미지"

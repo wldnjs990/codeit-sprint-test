@@ -1,6 +1,7 @@
 import TypeButton from "@/app/components/TypeButton";
 
 export default function DetailButtons({ id, name, memo, imageUrl }: TodoData) {
+  // 상세 페이지 수정사항들 객체로 통일
   const requestBody = {
     name: name ?? "",
     memo: memo ?? "",
